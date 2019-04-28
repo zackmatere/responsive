@@ -15,15 +15,24 @@ img{
 }
 .container {
     width: 95%;
-    margin :auto
+    max-width: 70em;
+    margin :auto;
 }
 
 /* typography
 ============================== */
 hi{
     font-weight: 300;
-   font-size: 2.5rem
+   font-size: 1.7rem;
+   margin-top: 0;
    
+}
+p{
+    margin-top: 0;
+    line-height: 1.5;
+}
+.p:last-of-type {
+    margin-bottom: 0;
 }
 .title{
 font-size: 2.5.rem;
@@ -31,16 +40,21 @@ margin-bottom: 1.5em;
 font-weight: 900;
 margin-top: 1em;
 }
-.title-span{
-    font-weight: 300;
-    display:block;
-    font-size: .9rem;
+.title span {
+	font-weight: 200;
+	display: block;
+	font-size: .9em;
 }
+
 
 @media(min-width:60rem) {
     .title{
     font-size: 3.7rem;
     }
+}
+p{
+    font-size: 1,2rem;
+    line-height: 1.6;
 }
 /* button-----------*/
 .button {
@@ -112,6 +126,57 @@ nav{
 -----------*/
 .home-about-textbox {
     background-color: #232323;
-    padding: 2em;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid #00FFC6;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+    
+}
+.home-about-textbox h1{
+    color: #00FFC6
+    position: absolute;
+    top: -5em;
+    background: #232323;
+    padding: 0 .145em;
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0,.3);
 
 }
+@media(min-width :25rem) {
+
+h1 {
+font-size: 2rem;
+}
+.home-about-textbox h1{
+    top: .6em;
+    padding: 0 .325em;
+}
+
+}
+
+@media(min-width :60rem) {
+
+    .home-about {
+        background-image: url(../img/who-we-are.jpg);
+        background-repeat: no-repeat;
+        padding-bottom: 10em;
+    }
+    .home-about-textbox{
+        width: 50%;
+        padding: 7em;
+        outline-offset: -3.5em;
+        margin-left: -2.5%;
+        top: 5em;
+        text-align: left;
+
+    }
+        
+    }
+    .home-about-textbox h1{
+        top: .75em;
+        left: 6rem;
+        transform: translatex(0);
+    }
+    
